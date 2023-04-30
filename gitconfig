@@ -47,5 +47,10 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = gabriel@markov.ro
+	email = urs4q3@gmail.com
 	name = Gabriel Ursache
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
